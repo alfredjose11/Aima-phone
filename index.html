@@ -256,7 +256,109 @@
             border-color: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
         }
+    /* ================= =========================================================
+           ST. EPHREMS CHURCH SUPPORT BANNER PREMIUM GLASSMORPHIC STYLING
+           ========================================================================== */
+        .parish-support-banner {
+            max-width: 1400px;
+            margin: 2.5rem auto 0 auto;
+            width: calc(100% - 12%);
+            position: relative;
+            z-index: 10;
+        }
 
+        .support-container {
+            background: linear-gradient(135deg, rgba(14, 14, 18, 0.45) 0%, rgba(20, 20, 25, 0.25) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Subtle background glow element matching your primary crimson theme */
+        .support-container::before {
+            content: '';
+            position: absolute;
+            top: -50%; right: -20%;
+            width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(255, 59, 66, 0.04) 0%, rgba(0,0,0,0) 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .support-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-muted);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+        }
+
+        .support-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        .church-emblem {
+            width: 64px;
+            height: 64px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            color: var(--text-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            box-shadow: inset 0 2px 4px rgba(255,255,255,0.03);
+        }
+
+        .support-text-block h2 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--primary-red);
+            margin-bottom: 0.25rem;
+        }
+
+        .support-text-block h3 {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+        }
+
+        .support-text-block p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            max-width: 780px;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .support-container { padding: 1.8rem; }
+            .support-content { flex-direction: column; gap: 1.25rem; }
+            .church-emblem { width: 52px; height: 52px; font-size: 1.2rem; border-radius: 12px; }
+            .support-text-block p { font-size: 0.88rem; line-height: 1.5; }
+        }
         .hero-image-spacer {
             min-height: 480px;
             pointer-events: none;
@@ -385,7 +487,7 @@
     <div id="aima-text-preloader">
         <h1 class="loader-title">AIMA<span>.</span></h1>
         <p class="loader-subtitle">SMYM Chirakkadavu</p>
-        <h3 class="loader-subtitle">St Ephrem's Church</h3>
+        <h3 class="loader-subtitle">St Ephrem's Church Thamarakunnu</h3>
     </div>
 
     <!-- ================= 2. MASTER APPLICATION CONTAINER HOOKS[cite: 7] ================= -->
@@ -401,7 +503,6 @@
             <div>
                 <h3>aima</h3>
                 <span>SMYM Chirakkadavu</span>
-                <h4>St Ephrem's Church<h4>
             </div>
         </div>
         <div class="nav-hamburger" onclick="toggleMobileNavigation()"><i class="fa-solid fa-bars"></i></div>
@@ -460,7 +561,24 @@
             </div>
         </div>
     </section>
-
+    <!-- ================= ST. EPHREM'S CHURCH SUPPORT BANNER ================= -->
+    <section class="parish-support-banner">
+        <div class="support-container">
+            <div class="support-badge">
+                <i class="fa-solid fa-church"></i> PARISH PARTNERSHIP
+            </div>
+            <div class="support-content">
+                <div class="church-emblem">
+                    <i class="fa-solid fa-cross"></i>
+                </div>
+                <div class="support-text-block">
+                    <h2>Supported & Endorsed by</h2>
+                    <h3>St. Ephrem's Church, Thamarakunnu</h3>
+                    <p>Standing together as one united parish family. This emergency lifeline is actively blessed, monitored, and supported across both the Chirakkadavu and Thamarakunnu communities to ensure immediate pastoral care and medical aid routing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="trust-banner">
         <div class="trust-left">
             <i class="fa-solid fa-shield-halved"></i>
