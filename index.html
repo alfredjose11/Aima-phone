@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIMA — SMYM Chirakkadavu Blood Donor Registry</title>
     
-    <!-- Premium Google Fonts Framework Integration[cite: 7] -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome Core Vector Asset Icons Package CDN[cite: 7] -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
         /* ==========================================================================
-           THEME STYLE SYSTEM CORE VARIABLES & ROOT METRICS[cite: 7]
+           THEME STYLE SYSTEM CORE VARIABLES & ROOT METRICS
            ========================================================================== */
         :root {
             --bg-dark: #050507;
@@ -45,7 +43,7 @@
         }
 
         /* ==========================================================================
-           NAVBAR EMBLEM LOGO HOVER & ZOOM CONFIGURATION[cite: 7]
+           NAVBAR EMBLEM LOGO HOVER & ZOOM CONFIGURATION
            ========================================================================== */
         .logo {
             display: flex;
@@ -70,7 +68,7 @@
         }
 
         /* ==========================================================================
-           CINEMATIC TEXT TRANSITION PRELOADER OVERLAYS[cite: 7]
+           CINEMATIC TEXT TRANSITION PRELOADER OVERLAYS
            ========================================================================== */
         #aima-text-preloader {
             position: fixed;
@@ -84,7 +82,7 @@
         .loader-subtitle { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3em; color: rgba(255,255,255,0.3); margin-top: 0.5rem; }
 
         /* ==========================================================================
-           BACKGROUND VISUAL GRAPHIC BACKDROP LAYERS[cite: 7]
+           BACKGROUND VISUAL GRAPHIC BACKDROP LAYERS
            ========================================================================== */
         .static-image-backdrop {
             position: fixed;
@@ -164,7 +162,7 @@
         }
 
         /* ==========================================================================
-           HERO DOUBLE COLUMN GRID (PREVENTS SQUISHING)[cite: 7]
+           HERO DOUBLE COLUMN GRID (PREVENTS SQUISHING)
            ========================================================================== */
         .hero {
             display: grid;
@@ -256,7 +254,8 @@
             border-color: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
         }
-    /* ================= =========================================================
+
+        /* ==========================================================================
            ST. EPHREMS CHURCH SUPPORT BANNER PREMIUM GLASSMORPHIC STYLING
            ========================================================================== */
         .parish-support-banner {
@@ -279,7 +278,6 @@
             position: relative;
         }
 
-        /* Subtle background glow element matching your primary crimson theme */
         .support-container::before {
             content: '';
             position: absolute;
@@ -352,20 +350,20 @@
             max-width: 780px;
         }
 
-        /* Mobile Adjustments */
         @media (max-width: 768px) {
             .support-container { padding: 1.8rem; }
             .support-content { flex-direction: column; gap: 1.25rem; }
             .church-emblem { width: 52px; height: 52px; font-size: 1.2rem; border-radius: 12px; }
             .support-text-block p { font-size: 0.88rem; line-height: 1.5; }
         }
+
         .hero-image-spacer {
             min-height: 480px;
             pointer-events: none;
         }
 
         /* ==========================================================================
-           UPDATED MINIMALIST INFO STRIP CSS (PERFECT ALIGNMENT)[cite: 7]
+           UPDATED MINIMALIST INFO STRIP CSS (PERFECT ALIGNMENT)
            ========================================================================== */
         .stats {
             max-width: 1200px; 
@@ -410,7 +408,7 @@
             color: rgba(255, 255, 255, 0.4);
         }
 
-        /* Trust Banner System[cite: 7] */
+        /* Trust Banner System */
         .trust-banner {
             max-width: 1400px; margin: 1.5rem auto 0 auto; width: calc(100% - 12%);
             background: rgba(14, 14, 18, 0.4); border: 1px solid var(--border-light);
@@ -483,24 +481,21 @@
 </head>
 <body>
 
-    <!-- ================= 1. THE TEXT TRANSITION PRELOADER[cite: 7] ================= -->
     <div id="aima-text-preloader">
         <h1 class="loader-title">AIMA<span>.</span></h1>
         <p class="loader-subtitle">SMYM Chirakkadavu</p>
-     
+    </div>
 
-    <!-- ================= 2. MASTER APPLICATION CONTAINER HOOKS[cite: 7] ================= -->
     <div class="static-image-backdrop">
         <img src="index.png" alt="Blood Drop Graphics Layout Canvas">
     </div>
     <div class="video-overlay"></div>
 
-    <!-- ================= UPDATED NAVIGATION BAR WITH OFFICIAL LOGO[cite: 7] ================= -->
     <header class="navbar">
         <div class="logo">
             <img src="finallogo.png" alt="SMYM Chirakkadavu Emblem Logo" class="navbar-emblem">
             <div>
-                <h3>aima</h3>
+                <h3>aima<span>.</span></h3>
                 <span>SMYM Chirakkadavu</span>
             </div>
         </div>
@@ -526,7 +521,7 @@
                     <i class="fa-solid fa-droplet"></i> Donate Blood — Register
                 </a>
                 <a href="contact.html" class="btn-secondary">
-                    <i class="fa-solid fa-magnifying-glass"></i> Contact us — Find A Donor
+                    <i class="fa-solid fa-magnifying-glass"></i> Contact us
                 </a>
             </div>
         </div>
@@ -534,7 +529,6 @@
         <div class="hero-image-spacer"></div>
     </main>
 
-    <!-- ================= UPDATED INFORMATIONAL INFOGRAPHIC STRIP[cite: 7] ================= -->
     <section class="stats">
         <div class="stat-card">
             <div class="stat-icon-wrapper"><i class="fa-solid fa-droplet"></i></div>
@@ -560,7 +554,7 @@
             </div>
         </div>
     </section>
-    <!-- ================= ST. EPHREM'S CHURCH SUPPORT BANNER ================= -->
+
     <section class="parish-support-banner">
         <div class="support-container">
             <div class="support-badge">
@@ -578,6 +572,7 @@
             </div>
         </div>
     </section>
+
     <section class="trust-banner">
         <div class="trust-left">
             <i class="fa-solid fa-shield-halved"></i>
